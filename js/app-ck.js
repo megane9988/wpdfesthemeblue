@@ -1,0 +1,3 @@
+// Foundation JavaScript
+// Documentation can be found at: http://foundation.zurb.com/docs
+(function(e){e(document).foundation();e(function(){e("a[href^=#]").click(function(){var t=10,n=e(this).attr("href"),r=e(n=="#"||n==""?"html":n),i=r.offset().top;e("html, body").animate({scrollTop:i},t,"swing");return!1})});e(function(){var t=e("#pageTop");t.hide();e(window).scroll(function(){e(this).scrollTop()>10?t.fadeIn():t.fadeOut()});t.click(function(){e("body,html").animate({scrollTop:0},300);return!1})})})(jQuery);

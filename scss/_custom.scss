@@ -1,0 +1,261 @@
+// wp need -----------------------------------------
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption,
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+	color: #220e10;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+	max-width:100%;
+}
+.single-author .entry-meta .author,
+.sticky.format-standard .entry-meta .date,
+.sticky.format-audio .entry-meta .date,
+.sticky.format-chat .entry-meta .date,
+.sticky.format-image .entry-meta .date,
+.sticky.format-gallery .entry-meta .date {
+	display: none;
+}
+
+// base -----------------------------------------
+h1, h2, h3, h4, h5, h6 {
+	color:$body-font-color;
+}
+.full{
+	width:100%;
+}
+.mt{
+	margin-top: 20px;
+}
+.mb{
+	margin-bottom: 20px;
+}
+a:hover{
+	text-decoration: underline;
+}
+p,li{
+	font-size: 0.875rem;
+}
+hr{
+	border: none;
+	border-top: 1px solid #ccc;
+}
+table{
+	border: 1px solid $primary-color; 
+}
+em{
+	font-style: normal;
+	line-height: inherit;
+	font-size: 0.875rem
+}
+// Layout -----------------------------------------
+.outer{
+	background-color: $secondary-color;
+	padding: 40px 0 20px 0;
+	margin-top: 30px;
+}
+.banner img,
+img.banner{
+	margin-bottom: 20px;
+}
+.horizon li{
+	display: inline;
+	margin-right: 20px;
+}
+.front{
+	h2{
+		color: $primary-color;
+		border-bottom: 1px solid #ccc;
+	}
+}
+a.post{
+	display: block;
+	overflow: hidden;
+	:hover{
+		background-color: $primary-color;
+		color: #fff; 
+	}
+}
+.newspost{
+	padding: 10px;
+	height: 120px;
+	margin-bottom: 20px;
+}
+.site-content{
+	p,li{
+		font-size: 1em;
+	}
+	h1, h2, h3, h4, h5, h6 {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+	}
+}
+.post-meta{
+	li{
+		display: inline;
+		margin-right: 5px;
+	}
+}
+.side-bar{
+	h4{
+		font-size: 1em; 
+		padding: 10px 0 10px 10px;
+		background-color: $secondary-color;
+	}
+}
+// module -----------------------------------------
+.main-img{
+	margin-bottom: 50px;
+	background-color: $primary-color;
+	background-image: url(../img/blue-main.jpg);
+	background-position: center top;
+	height: 400px;
+	.main-img-title{
+		padding: 30px;
+		margin-top: 70px;
+		background-color: rgba(0,0,0,0.5);
+		h1,h2{
+			margin-top: 0;
+			color: #FFF;
+		}
+		h3{
+			color: #fff;
+			margin-bottom: 0;
+			span{
+				font-size: 1rem;
+			}
+		}
+		p{
+			color: #fff; 
+		}
+	}
+}
+.main-img.next{
+	background-image: url(../img/blue-sub.jpg); 
+}
+.l-title{
+	padding-top: 50px;
+	margin-bottom: 20px;
+	h2{
+		margin: 0;
+		padding-top: 10px;
+		font-size: 2.5rem;
+		color: $primary-color;
+	}
+	h4{
+		font-size: 0.875rem;
+		color: $primary-color; 
+	}
+}
+.outer .l-title{
+	padding-top: 20px;
+}
+.s-title{
+	border-left: 8px solid $primary-color;
+	padding: 5px 0 5px 15px;
+	span{
+		margin-left: 20px;
+		font-size: 0.875rem;
+	}
+}
+.prof{
+	border-bottom: 1px solid #d8cebe;
+	-webkit-box-shadow: 0 1px 0 #f2efea;
+	box-shadow: 0 1px 0 #f2efea;
+	margin-bottom: 10px;
+	.left.grav{
+		margin-right: 10px;
+	}
+}
+.prof.last{
+	border:none;
+	box-shadow: none;
+	margin-bottom: none;
+}
+.page_navi {
+	text-align: center;
+	clear: both;
+	li {
+		display: inline;
+		list-style-type: none;
+	}
+	li.current span {
+		padding: 7px 10px;
+		background-color: #33201f;
+		color: #fff;
+		border: 1px solid #33201f;
+	}
+	li a {
+	padding: 7px 10px;
+	background-color: #fff;
+	color: #5f2f08;
+	border: 1px solid #33201f;
+	}
+}
+@media screen and (min-width: 40em) {
+	.prof-right{
+		overflow: hidden;
+	}
+	.social{
+		display: inline;
+	}
+}
+@media screen and (max-width: 40em) {
+	.peatix iframe{
+		width: 100%;
+	}
+	.main-img{
+		background-color: $primary-color; 
+		// background-image: url(../img/mainsp.png);
+		height: 400px;
+		.main-img-title {
+		margin-top: 30px;
+		}
+	}
+	.prof.last{
+		border-bottom: 1px solid #d8cebe;
+		box-shadow: 0 1px 0 #f2efea;
+		margin-bottom: 10px;
+	}
+	h3{
+		span{
+			display: block;
+		}
+	}
+	.s-title span{
+		margin-left: 0;
+	}
+}
+// state -----------------------------------------
+
+// 戻るボタン
+#pageTop{
+	background:#ccc;
+	border-radius:5px;
+	color:#FFF;
+	padding:10px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	:hover{
+	background:#444;
+	}
+}
+
+// theme -----------------------------------------
+
+// googleのフォームなどを埋め込んだ際に横幅いっぱいにしたい場合このクラスで挟む
+	.iffull iframe{
+		width: 100%;
+	}
